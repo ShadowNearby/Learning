@@ -1,0 +1,4 @@
+cmake_minimum_required(version 2.6)
+project(testproject)
+aux_source_directory(. src_list)
+add_executable(main ${src_list})
