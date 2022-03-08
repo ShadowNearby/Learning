@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-03-04 21:51:31
  * @LastEditors: js
- * @LastEditTime: 2022-03-06 15:45:02
+ * @LastEditTime: 2022-03-06 11:27:51
  * @FilePath: \code\Learning2\oj\1485.cpp
  */
 #include<iostream>
@@ -16,7 +16,8 @@ int main(){
     int num;
     int a1[n];
     int c[n];
-    for (int i = 0; i < n; ++i){       
+    for (int i = 0; i < n; ++i){
+        
         cin >> num;
         a1[i] = num;
         a[i] = (a1 + i);
@@ -55,16 +56,18 @@ int main(){
         }
         else b.push(a[i]);
     }
-
-    cout << ans * 2 + n << endl;
     int d[n];
     d[0] = c[0] + 1;
     for (int i = 1; i < n; ++i){
         d[i] = d[i - 1] + c[i] + 1;
     }
+    cout << d[n - 1] << endl;
     for (int i = 0; i < m; ++i){
         cin >> j >> k;
-        ans = d[k - 1] - d[j - 2];
+        if(j >= 2)
+            ans = d[k - 1] - d[j - 2];
+        else
+            ans = d[k - 1];
         cout << ans << endl;
     }
     return 0;
