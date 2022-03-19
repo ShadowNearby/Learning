@@ -19,7 +19,6 @@ public:
     Node *move(int pos);
     Linklist(int len);
     Linklist();
-    //Linklist(const Linklist &other);
     ~Linklist();
     void insert(int pos, int value);
     void del(int pos);
@@ -31,6 +30,7 @@ public:
     void reverse();
     void erase(int x, int y);
     friend void merge(Linklist &l,Linklist &r);
+    void append(int val);
 };
 Linklist::Linklist(){
     len = 0;
