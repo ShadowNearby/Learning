@@ -5,11 +5,14 @@
  * @FilePath: \code\test\test.cc
  */
 #include <cstring>
+#include <stack>
 #include <iostream>
 #include <vector>
 #include <map>
 using namespace std;
 int main(){
-    int *a[2];
-    cout << (a + 1) - a;
+    stack<int> a;
+    a.push(100);
+    int b = a.pop();
+    cout << b;
 }
