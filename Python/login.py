@@ -1,5 +1,3 @@
-from time import sleep
-from cv2 import imread
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import re

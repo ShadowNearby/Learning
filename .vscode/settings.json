@@ -14,5 +14,22 @@
         "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
+    "cSpell.words": [
+        "kbhit",
+        "pytesseract",
+        "yanjingsheng"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./Python",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "Python"
+    ],
     
 }
